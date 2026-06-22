@@ -360,7 +360,7 @@
 
         const user = users.find(u => u.email === email && u.password === password);
         if (!user) {
-          alert('Invalid credentials. Try admin@fus.agency / admin123');
+          alert('Invalid email or password.');
           return;
         }
         if (user.role === 'admin') {
